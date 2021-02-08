@@ -1,0 +1,32 @@
+{
+  "reviews": [
+    {
+      "id": 1,
+      "date": "2021-02-01",
+      "rating": 4,
+      "text": "Food was excellent. Service stellar. Would definitely dine here again.",
+      "name": "Bryan"
+    },
+    {
+      "id": 2,
+      "date": "2021-02-05",
+      "rating": 3,
+      "text": "This place was just okay. Disappointed they didn't serve tacos.",
+      "name": "Brenda"
+    },
+    {
+      "date": "2021-02-08T00:08:11.198Z",
+      "rating": 5,
+      "text": "Really enjoyed our meal. Had the steak and it was super tender. Would totally come back again.",
+      "name": "Madi",
+      "id": 3
+    },
+    {
+      "date": "2021-02-08T00:34:14.093Z",
+      "rating": 1,
+      "text": "I wanted to like this place but they didn't have Cheetos Mac and Cheese. Two thumbs down for this stinky place.",
+      "name": "Katie",
+      "id": 4
+    }
+  ]
+}

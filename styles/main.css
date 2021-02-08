@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+body {
+    color: rgb(40, 40, 40);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.logo {
+    font-family: 'Lexend Mega', sans-serif;
+    text-align: center;
+}
+
+.logo--prefix {
+    font-size: .5em;
+    vertical-align: middle;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2em;
+}
+
+main {
+    margin: auto;
+    max-width: 700px;
+}
+
+select {
+    padding: .3em;
+}
+
+.menu__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews__container {
+    display: flex;
+}
+
+fieldset {
+    border: none;
+    margin: 0 0 1em 0;
+    padding: 0;
+}
+
+.star {
+    color: crimson
+}
+
+.star--fade {
+    opacity: .5;
+}
+
+.btn--delete {
+    background-color: crimson;
+    color: white;
+    border: 1px solid rgb(40, 40, 40);
+}
+
+/* CSS UTILITIES */
+
+/* FLEX */
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* MARGINS */
+
+.mar-l {
+    margin-left: 1rem;
+}
+
+.mar-r {
+    margin-right: 1rem;
+}

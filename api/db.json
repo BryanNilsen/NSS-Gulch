@@ -1,0 +1,70 @@
+{
+    "menus": [
+        {
+            "id": 1,
+            "name": "Lunch"
+        },
+        {
+            "id": 2,
+            "name": "Dinner"
+        },
+        {
+            "id": 3,
+            "name": "Appetizers"
+        },
+        {
+            "id": 4,
+            "name": "Desserts"
+        }
+    ],
+    "items": [
+        {
+            "id": 1,
+            "menuId": 1,
+            "name": "Hot Chicken Tenders",
+            "price": 9.75,
+            "isVegetarian": false,
+            "description": "These Spicy Chicken Tenders are ridiculously delicious! Chicken strips marinated in buttermilk and hot sauce, then deep fried for extra crispiness"
+        },
+        {
+            "id": 2,
+            "menuId": 2,
+            "name": "Portabello Burger",
+            "price": 8.75,
+            "isVegetarian": true,
+            "description": "Giant slab of portabello with garlic aioli on a toasted brioche bun."
+        },
+        {
+            "id": 3,
+            "menuId": 4,
+            "name": "Nashville Hot Cheesecake",
+            "price": 3.50,
+            "isVegetarian": true,
+            "description": "Traditional cheesecake with a cayenne and bourbon glaze."
+        },
+        {
+            "id": 4,
+            "menuId": 3,
+            "name": "Sweet Potato Fries",
+            "price": 3.75,
+            "isVegetarian": true,
+            "description": "Thick cut sweet potato wedges, lightly salted. Served with honey."
+        },
+        {
+            "id": 5,
+            "menuId": 3,
+            "name": "Muzic City Stix",
+            "price": 6.25,
+            "isVegetarian": true,
+            "description": "Classic mozzarella sticks with a thick coat of parmesan breadcrumbs, lightly fried and served with tomato basil sauce."
+        },
+        {
+            "id": 6,
+            "menuId": 2,
+            "name": "Whole Lotta Steak'n Going On",
+            "price": 24.95,
+            "isVegetarian": false,
+            "description": "This steak is seared to perfection while cooked over a great ball of fire. Served with garlic-rosemary smashed potatoes."
+        }
+    ]
+}
