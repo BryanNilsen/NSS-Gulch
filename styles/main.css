@@ -71,9 +71,13 @@ fieldset {
 /* MARGINS */
 
 .mar-l {
-    margin-left: 1rem;
+    margin-left: 1em;
 }
 
 .mar-r {
-    margin-right: 1rem;
+    margin-right: 1em;
+}
+
+.mar-b {
+    margin-bottom: 2em;
 }

@@ -65,6 +65,14 @@
             "price": 24.95,
             "isVegetarian": false,
             "description": "This steak is seared to perfection while cooked over a great ball of fire. Served with garlic-rosemary smashed potatoes."
+        },
+        {
+            "id": 7,
+            "menuId": 1,
+            "name": "Coconut Shrimp Salad",
+            "price": 14.95,
+            "isVegetarian": false,
+            "description": "Crispy fried shrimp, covered in coconut flakes, served on a bed of romaine lettuce, chopped tomatoes, and sliced carrots. Zesty sauce served on the side."
         }
     ]
 }
