@@ -1,25 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap'); */
+
+
+
 body {
     color: rgb(40, 40, 40);
     font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4D1717;
+    color: white;
+}
+
+.nav__wrapper {
+    display: flex;
+    margin: auto;
+    max-width: 800px;
 }
 
 .logo {
-    font-family: 'Lexend Mega', sans-serif;
-    text-align: center;
-}
-
-.logo--prefix {
-    font-size: .5em;
-    vertical-align: middle;
+    padding: 1em;
+    min-width: 300px;
 }
 
 nav {
     display: flex;
+    width: 100%;
     justify-content: space-around;
-    margin-bottom: 2em;
 }
+
+nav div {
+    display: flex;
+    align-items: center;
+}
+
+nav button {
+    border: none;
+    color: white;
+    background: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+    opacity: .7;
+    outline: none;
+}
+
+nav button:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.subnav {
+    display: flex;
+    margin: auto;
+    padding: .5em 0;
+    max-width: 700px;
+}
+
 
 main {
     margin: auto;

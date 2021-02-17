@@ -1,7 +1,9 @@
-import { NavSelect } from "./nav/NavSelect.js";
-import { MenuList } from "./menu/MenuList.js";
-import { ShowReviewsBtn } from "./reviews/ShowReviewsBtn.js";
+import { MenusButton } from "./menu/MenusButton.js";
+import { LocationsNavBtn } from "./locations/LocationsNavBtn.js";
+import { TeamNavBtn } from "./team/TeamNavBtn.js"
+import { ReviewsNavBtn } from "./reviews/ReviewsNavBtn.js";
 
-NavSelect();
-ShowReviewsBtn();
-MenuList();
+MenusButton();
+LocationsNavBtn();
+ReviewsNavBtn();
+TeamNavBtn();

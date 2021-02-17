@@ -1,8 +1,8 @@
 import "./Reviews.js"
 
-export const ShowReviewsBtn = () => {
-    const contentTarget = document.getElementById("review-button__container")
-    contentTarget.innerHTML += `
+export const ReviewsNavBtn = () => {
+    const contentTarget = document.getElementById("reviews-btn__container")
+    contentTarget.innerHTML = `
     <button id="show-reviews">Reviews</button>
     `
 }

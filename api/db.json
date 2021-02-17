@@ -74,5 +74,50 @@
             "isVegetarian": false,
             "description": "Crispy fried shrimp, covered in coconut flakes, served on a bed of romaine lettuce, chopped tomatoes, and sliced carrots. Zesty sauce served on the side."
         }
+    ],
+    "employees" : [
+        {
+            "id": 1,
+            "firstName": "John",
+            "lastName": "Kash",
+            "positionId": 1
+        },
+        {
+            "id": 2,
+            "firstName": "Billie",
+            "lastName": "Raddish",
+            "positionId": 1
+        }
+    ],
+    "positions": [
+        {
+            "id": 1,
+            "name": "Server"
+        },
+        {
+            "id": 2,
+            "name": "Manager"
+        },
+        {
+            "id": 3,
+            "name": "Cook"
+        },
+        {
+            "id": 4,
+            "name": "Host"
+        },
+        {
+            "id": 5,
+            "name": "Bartender"
+        },
+        {
+            "id": 6,
+            "name": "Busser"
+        },
+        {
+            "id": 7,
+            "name": "Owner"
+        }
     ]
+
 }

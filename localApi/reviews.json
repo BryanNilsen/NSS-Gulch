@@ -1,13 +1,6 @@
 {
   "reviews": [
     {
-      "id": 1,
-      "date": "2021-02-01",
-      "rating": 4,
-      "text": "Food was excellent. Service stellar. Would definitely dine here again.",
-      "name": "Bryan"
-    },
-    {
       "id": 2,
       "date": "2021-02-05",
       "rating": 3,

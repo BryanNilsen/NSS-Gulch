@@ -1,18 +1,20 @@
-import { getMenuItems, useMenuItems } from "./MenuProvider.js"
+import { getMenuItems } from "./MenuProvider.js"
 import { MenuItem } from "./MenuItem.js"
+
+let allMenuItems = []
+let filteredMenuItems = []
 
 export const MenuList = () => {
     getMenuItems()
-        .then(() => {
-            const menuItems = useMenuItems()
-            renderMenuToDOM(menuItems)
+        .then((menuData) => {
+            allMenuItems = menuData
+            render(allMenuItems)
         })
 }
 
-const renderMenuToDOM = (menuArrary, menuText) => {
-    if (!menuText) {
-        menuText = "All Items"
-    }
+const render = (menuArrary) => {
+    const titleTarget = document.getElementById("page-title")
+    titleTarget.innerHTML = "MENU"
     // get reference to DOM element
     const contentTarget = document.querySelector("main")
     // iterate items array and make HTML representation
@@ -20,23 +22,24 @@ const renderMenuToDOM = (menuArrary, menuText) => {
     // render to DOM
     contentTarget.innerHTML = `
     <section class="menu__container">
-        <h2>Menu - ${menuText}</h2>
-        <hr/>
         <section class="menu__list">
             ${menuHTML}
         </section>
     </section>
     `
-
 }
 
 const eventHub = document.querySelector("body")
 eventHub.addEventListener("menuSelected", event => {
     const menuId = event.detail.menuId
-    const menuText = event.detail.menuText
-    let menuItems = useMenuItems()
     if (menuId !== 0) {
-        menuItems = useMenuItems().filter(item => item.menuId === menuId)
+        filteredMenuItems = allMenuItems.filter(item => item.menuId === menuId)
+        render(filteredMenuItems)
+    } else {
+        render(allMenuItems)
     }
-    renderMenuToDOM(menuItems, menuText)
+})
+
+eventHub.addEventListener("menusNavClicked", event => {
+    MenuList()
 })
