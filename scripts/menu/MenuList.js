@@ -14,7 +14,7 @@ export const MenuList = () => {
 
 const render = (menuArrary) => {
     const titleTarget = document.getElementById("page-title")
-    titleTarget.innerHTML = "MENU"
+    titleTarget.innerHTML = "Menus"
     // get reference to DOM element
     const contentTarget = document.querySelector("main")
     // iterate items array and make HTML representation

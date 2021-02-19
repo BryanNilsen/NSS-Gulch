@@ -1,9 +1,11 @@
 import { MenusNavlink } from "./menu/MenusNavlink.js";
-import { LocationsNavBtn } from "./locations/LocationsNavBtn.js";
-import { TeamNavBtn } from "./team/TeamNavBtn.js"
-import { ReviewsNavBtn } from "./reviews/ReviewsNavBtn.js";
+import { LocationsNavlink } from "./locations/LocationsNavlink.js";
+import { TeamNavlink } from "./team/TeamNavlink.js"
+import { ReviewsNavlink } from "./reviews/ReviewsNavlink.js";
+import { MenuList } from "./menu/MenuList.js";
 
-MenusNavlink();
-LocationsNavBtn();
-ReviewsNavBtn();
-TeamNavBtn();
+MenusNavlink()
+LocationsNavlink()
+TeamNavlink()
+ReviewsNavlink()
+MenuList()

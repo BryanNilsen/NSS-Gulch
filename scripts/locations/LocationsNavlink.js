@@ -1,13 +1,13 @@
-export const LocationsNavBtn = () => {
-    const contentTarget = document.getElementById("locations-btn__container")
+export const LocationsNavlink = () => {
+    const contentTarget = document.getElementById("locations-navlink")
     contentTarget.innerHTML = `
-    <button id="show-locations">Locations</button>
+    <a id="locations-nav" href="#locations" class="navlink">Locations</button>
     `
 }
 
 const eventHub = document.querySelector("body")
 eventHub.addEventListener("click", event => {
-    if (event.target.id === "show-locations") {
+    if (event.target.id === "locations-nav") {
         const customEvent = new CustomEvent("locationsNavClicked")
         eventHub.dispatchEvent(customEvent)
     }

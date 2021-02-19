@@ -1,7 +1,8 @@
 import { postReview } from "./ReviewsProvider.js"
 
 export const ReviewForm = () => {
-    return `
+    const contentTarget = document.querySelector("aside")
+    contentTarget.innerHTML = `
     <h2>Add Review</h2>
     <hr/>
     <form>
@@ -33,6 +34,17 @@ export const ReviewForm = () => {
 }
 
 const eventHub = document.querySelector("body")
+eventHub.addEventListener("reviewsNavClicked", event => {
+    ReviewForm()
+})
+
+eventHub.addEventListener("click", event => {
+    if (event.target.className === "navlink" && event.target.id !== "reviews-nav") {
+        const contentTarget = document.querySelector("aside")
+        contentTarget.innerHTML = ""
+    }
+})
+
 eventHub.addEventListener("click", event => {
     if (event.target.id === "review--submit") {
         // prevent form from refreshing the page

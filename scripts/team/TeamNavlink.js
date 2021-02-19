@@ -1,7 +1,7 @@
-export const TeamNavBtn = () => {
-    const contentTarget = document.getElementById("team-btn__container")
+export const TeamNavlink = () => {
+    const contentTarget = document.getElementById("team-navlink")
     contentTarget.innerHTML = `
-    <a id="team-nav" href="#team" class="navlink">Our Team</a>
+    <a id="team-nav" href="#team" class="navlink">Team</a>
     `
 }
 

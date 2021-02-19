@@ -52,18 +52,32 @@ nav div {
 .subnav {
     display: flex;
     margin: auto;
-    padding: .5em 0;
+    padding: 1em 0;
     max-width: 700px;
 }
 
+.main__wrapper {
+    margin: auto;
+    display: flex;
+    max-width: 700px;
+}
 
 main {
-    margin: auto;
+    width: 100%;
+}
+
+.main--width {
     max-width: 700px;
 }
 
 select {
     padding: .3em;
+}
+
+#page-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 1em;
 }
 
 .menu__container {
@@ -107,11 +121,11 @@ fieldset {
 /* MARGINS */
 
 .mar-l {
-    margin-left: 1em;
+    margin-left: 2em;
 }
 
 .mar-r {
-    margin-right: 1em;
+    margin-right: 2em;
 }
 
 .mar-b {
