@@ -1,10 +1,10 @@
 import "./MenuList.js"
 import "./MenuSelect.js"
 
-export const MenusButton = () => {
-    const contentTarget = document.getElementById("menus-btn__container")
+export const MenusNavlink = () => {
+    const contentTarget = document.getElementById("menus-navlink")
     contentTarget.innerHTML = `
-    <button id="menus-nav">Menus</button>
+    <a id="menus-nav" href="#menus" class="navlink">Menus</a>
     `
 }
 

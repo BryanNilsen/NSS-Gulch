@@ -1,4 +1,4 @@
-import { getMenuItems } from "./MenuProvider.js"
+import { getMenuItems } from "./MenuDataManager.js"
 import { MenuItem } from "./MenuItem.js"
 
 let allMenuItems = []
@@ -30,6 +30,9 @@ const render = (menuArrary) => {
 }
 
 const eventHub = document.querySelector("body")
+eventHub.addEventListener("menusNavClicked", event => {
+    MenuList()
+})
 eventHub.addEventListener("menuSelected", event => {
     const menuId = event.detail.menuId
     if (menuId !== 0) {
@@ -38,8 +41,4 @@ eventHub.addEventListener("menuSelected", event => {
     } else {
         render(allMenuItems)
     }
-})
-
-eventHub.addEventListener("menusNavClicked", event => {
-    MenuList()
 })

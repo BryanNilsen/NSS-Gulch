@@ -1,10 +1,9 @@
-import { getMenuCategories } from "./MenuProvider.js";
+import { getMenuCategories } from "./MenuDataManager.js";
 
 export const MenuSelect = () => {
     getMenuCategories()
-        .then((menuData) => {
-            // const menuCategories = useMenuCategories()
-            return render(menuData)
+        .then((menuCategoryArray) => {
+            return render(menuCategoryArray)
         })
 }
 
@@ -26,6 +25,11 @@ const render = (categoryArray) => {
 }
 
 const eventHub = document.querySelector("body")
+
+eventHub.addEventListener("menusNavClicked", event => {
+    MenuSelect()
+})
+
 eventHub.addEventListener("change", (changeEvent) => {
     // check if target id is "menu--select"
     if (changeEvent.target.id === "menu--select") {
@@ -37,8 +41,4 @@ eventHub.addEventListener("change", (changeEvent) => {
         })
         eventHub.dispatchEvent(customEvent)
     }
-})
-
-eventHub.addEventListener("menusNavClicked", event => {
-    MenuSelect()
 })
