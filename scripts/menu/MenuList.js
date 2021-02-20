@@ -8,6 +8,7 @@ export const MenuList = () => {
     getMenuItems()
         .then((menuData) => {
             allMenuItems = menuData
+            filteredMenuItems = menuData
             render(allMenuItems)
         })
 }
@@ -39,6 +40,19 @@ eventHub.addEventListener("menuSelected", event => {
         filteredMenuItems = allMenuItems.filter(item => item.menuId === menuId)
         render(filteredMenuItems)
     } else {
+        filteredMenuItems = allMenuItems
         render(allMenuItems)
+    }
+})
+
+eventHub.addEventListener("MenuSorted", event => {
+    const sortOption = event.detail.sortOption
+    if (sortOption === 1) {
+        const sortedMenuItems = filteredMenuItems.sort((itemA, itemB) => itemA.price - itemB.price)
+        render(sortedMenuItems)
+    }
+    if (sortOption === 2) {
+        const sortedMenuItems = filteredMenuItems.sort((itemA, itemB) => itemB.price - itemA.price)
+        render(sortedMenuItems)
     }
 })

@@ -1,8 +1,9 @@
-import { postReview } from "./ReviewsProvider.js"
+import { postReview } from "./ReviewsDataManager.js"
 
 export const ReviewForm = () => {
     const contentTarget = document.querySelector("aside")
     contentTarget.innerHTML = `
+    <section class="review-form__wrapper">
     <h2>Add Review</h2>
     <hr/>
     <form>
@@ -19,7 +20,6 @@ export const ReviewForm = () => {
                 <option value="3">3</option>
                 <option value="2">2</option>
                 <option value="1">1</option>
-                <option value="0">0</option>
                 </select>
             </label>
         </fieldset>
@@ -30,6 +30,7 @@ export const ReviewForm = () => {
         </fieldset>
         <button id="review--submit">Submit</button>
     </form>
+    </section>
     `
 }
 
@@ -38,6 +39,7 @@ eventHub.addEventListener("reviewsNavClicked", event => {
     ReviewForm()
 })
 
+// Removes form from aside when any other navlink is selected
 eventHub.addEventListener("click", event => {
     if (event.target.className === "navlink" && event.target.id !== "reviews-nav") {
         const contentTarget = document.querySelector("aside")
@@ -45,6 +47,7 @@ eventHub.addEventListener("click", event => {
     }
 })
 
+// Submits review form
 eventHub.addEventListener("click", event => {
     if (event.target.id === "review--submit") {
         // prevent form from refreshing the page

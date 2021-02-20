@@ -1,4 +1,4 @@
-import { deleteReview } from "./ReviewsProvider.js"
+import { deleteReview } from "./ReviewsDataManager.js"
 
 export const Review = (reviewObj) => {
     // return HTML representation of single review object

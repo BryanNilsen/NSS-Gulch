@@ -1,32 +1,53 @@
 {
-  "reviews": [
-    {
-      "id": 2,
-      "date": "2021-02-05",
-      "rating": 3,
-      "text": "This place was just okay. Disappointed they didn't serve tacos.",
-      "name": "Brenda"
-    },
-    {
-      "date": "2021-02-08T00:08:11.198Z",
-      "rating": 5,
-      "text": "Really enjoyed our meal. Had the steak and it was super tender. Would totally come back again.",
-      "name": "Madi",
-      "id": 3
-    },
-    {
-      "date": "2021-02-08T00:34:14.093Z",
-      "rating": 1,
-      "text": "I wanted to like this place but they didn't have Cheetos Mac and Cheese. Two thumbs down for this stinky place.",
-      "name": "Katie",
-      "id": 4
-    },
-    {
-      "date": "2021-02-08T00:49:17.903Z",
-      "rating": 5,
-      "text": "The coconut shrimp salad was excellent. I would totally love to eat here every night!!!",
-      "name": "Lulu",
-      "id": 5
-    }
-  ]
+    "reviews": [
+        {
+            "id": 2,
+            "date": "2021-02-05",
+            "rating": 3,
+            "text": "This place was just okay. Disappointed they didn't serve tacos.",
+            "name": "Brenda"
+        },
+        {
+            "date": "2021-02-08T00:08:11.198Z",
+            "rating": 5,
+            "text": "Really enjoyed our meal. Had the steak and it was super tender. Would totally come back again.",
+            "name": "Madi",
+            "id": 3
+        },
+        {
+            "date": "2021-02-08T00:34:14.093Z",
+            "rating": 1,
+            "text": "I wanted to like this place but they didn't have Cheetos Mac and Cheese. Two thumbs down for this stinky place.",
+            "name": "Katie",
+            "id": 4
+        },
+        {
+            "date": "2021-02-08T00:49:17.903Z",
+            "rating": 5,
+            "text": "The coconut shrimp salad was excellent. I would totally love to eat here every night!!!",
+            "name": "Lulu",
+            "id": 5
+        },
+        {
+            "date": "2021-02-20T06:03:48.654Z",
+            "rating": 2,
+            "text": "Hated it. Didn't realize this place serves fish.",
+            "name": "Martin",
+            "id": 6
+        },
+        {
+            "date": "2021-02-20T06:04:58.263Z",
+            "rating": 4,
+            "text": "Amazing atmosphere and friendly staff. Food was cooked to perfection!!",
+            "name": "John",
+            "id": 7
+        },
+        {
+            "date": "2021-02-20T06:06:18.017Z",
+            "rating": 1,
+            "text": "ugh",
+            "name": "Testing",
+            "id": 8
+        }
+    ]
 }

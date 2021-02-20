@@ -1,5 +1,6 @@
 import "./MenuList.js"
 import "./MenuSelect.js"
+import "./MenuSort.js"
 
 export const MenusNavlink = () => {
     const contentTarget = document.getElementById("menus-navlink")

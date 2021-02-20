@@ -1,6 +1,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap'); */
 
+@import './reviews.css';
 
 
 body {
@@ -56,6 +57,10 @@ nav div {
     max-width: 700px;
 }
 
+.subnav>div {
+    margin-right: 1em;
+}
+
 .main__wrapper {
     margin: auto;
     display: flex;
@@ -70,14 +75,10 @@ main {
     max-width: 700px;
 }
 
-select {
-    padding: .3em;
-}
 
 #page-title {
     font-size: 1.5em;
     font-weight: bold;
-    margin-right: 1em;
 }
 
 .menu__container {
@@ -87,29 +88,14 @@ select {
 
 .reviews__container {
     display: flex;
+    margin-right: 2.5em;
 }
 
-fieldset {
-    border: none;
-    margin: 0 0 1em 0;
-    padding: 0;
+
+select {
+    padding: .3em;
 }
 
-.star {
-    color: crimson
-}
-
-.star--fade {
-    opacity: .5;
-}
-
-.btn--delete {
-    background-color: crimson;
-    color: white;
-    border: 1px solid rgb(40, 40, 40);
-}
-
-/* CSS UTILITIES */
 
 /* FLEX */
 

@@ -1,6 +1,6 @@
 
 export const getMenuCategories = () => {
-    return fetch("http://localhost:5000/menus")
+    return fetch("https://snackoverflow-api.herokuapp.com/menus")
         .then(response => response.json())
         .then(menuCategoriesFromAPI => {
             // console.table(menuCategoriesFromAPI)
@@ -11,7 +11,7 @@ export const getMenuCategories = () => {
 
 
 export const getMenuItems = () => {
-    return fetch("http://localhost:5000/items")
+    return fetch("https://snackoverflow-api.herokuapp.com/items")
         .then(response => response.json())
         .then(menuItemsFromAPI => {
             // console.table(menuItemsFromAPI)
